@@ -1,0 +1,71 @@
+# ---------------------------------------------
+# Unreal Engine project .gitignore
+# ---------------------------------------------
+
+# Generated / build output
+Binaries/
+Build/
+DerivedDataCache/
+Intermediate/
+Saved/
+Platforms/*/Binaries/
+Platforms/*/Build/
+Platforms/*/Intermediate/
+
+# Plugin generated output
+Plugins/**/Binaries/
+Plugins/**/Intermediate/
+!Plugins/**/Binaries/**/*.uplugin
+
+# Visual Studio / Rider / VS Code
+.vs/
+.vscode/
+.idea/
+*.VC.db
+*.VC.opendb
+*.opensdf
+*.sdf
+*.suo
+*.user
+*.userosscache
+*.userprefs
+*.sln.docstates
+*.ipch
+
+# Generated project files (regenerated from .uproject)
+*.sln
+*.slnx
+*.xcodeproj/
+*.xcworkspace/
+Makefile
+CMakeLists.txt
+*.kdev4
+.kdev4/
+compile_commands.json
+
+# Packaging / archives
+Packaged/
+Builds/
+*.ipa
+*.apk
+*.app
+
+# Crash / log artifacts
+*.log
+*.dmp
+*.stackdump
+
+# OS cruft
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# Local tooling / secrets
+.env
+*.pem
+
+# Claude Code local settings
+.claude/settings.local.json

@@ -1,0 +1,123 @@
+# ---------------------------------------------
+# Unreal Engine project .gitattributes
+# ---------------------------------------------
+
+# Default: let git decide, normalize text line endings in the repo
+* text=auto
+
+# --- Source / text files: explicit text, LF in repo ---
+*.cpp               text eol=lf diff=cpp
+*.h                 text eol=lf diff=cpp
+*.hpp               text eol=lf diff=cpp
+*.c                 text eol=lf
+*.inl               text eol=lf
+*.cs                text eol=lf diff=csharp
+*.usf               text eol=lf
+*.ush               text eol=lf
+*.cginc             text eol=lf
+*.hlsl              text eol=lf
+*.py                text eol=lf diff=python
+*.sh                text eol=lf
+*.bat               text eol=crlf
+*.cmd               text eol=crlf
+*.ps1               text eol=crlf
+*.md                text eol=lf
+*.txt               text eol=lf
+*.json              text eol=lf
+*.xml               text eol=lf
+*.yml               text eol=lf
+*.yaml              text eol=lf
+*.ini               text eol=lf
+*.cfg               text eol=lf
+*.uproject          text eol=lf
+*.uplugin           text eol=lf
+*.Target.cs         text eol=lf
+*.Build.cs          text eol=lf
+*.gitattributes     text eol=lf
+*.gitignore         text eol=lf
+
+# --- Unreal binary assets: Git LFS, never merged, never diffed ---
+*.uasset            filter=lfs diff=lfs merge=lfs -text
+*.umap              filter=lfs diff=lfs merge=lfs -text
+*.upack             filter=lfs diff=lfs merge=lfs -text
+*.udk               filter=lfs diff=lfs merge=lfs -text
+*.ubulk             filter=lfs diff=lfs merge=lfs -text
+*.uexp              filter=lfs diff=lfs merge=lfs -text
+*.uplugin.bak       filter=lfs diff=lfs merge=lfs -text
+*.ddc               filter=lfs diff=lfs merge=lfs -text
+
+# --- Textures / images ---
+*.png               filter=lfs diff=lfs merge=lfs -text
+*.jpg               filter=lfs diff=lfs merge=lfs -text
+*.jpeg              filter=lfs diff=lfs merge=lfs -text
+*.bmp               filter=lfs diff=lfs merge=lfs -text
+*.gif               filter=lfs diff=lfs merge=lfs -text
+*.tga               filter=lfs diff=lfs merge=lfs -text
+*.tif               filter=lfs diff=lfs merge=lfs -text
+*.tiff              filter=lfs diff=lfs merge=lfs -text
+*.psd               filter=lfs diff=lfs merge=lfs -text
+*.exr               filter=lfs diff=lfs merge=lfs -text
+*.hdr               filter=lfs diff=lfs merge=lfs -text
+*.dds               filter=lfs diff=lfs merge=lfs -text
+*.ico               filter=lfs diff=lfs merge=lfs -text
+*.svg               filter=lfs diff=lfs merge=lfs -text
+*.webp              filter=lfs diff=lfs merge=lfs -text
+
+# --- Audio ---
+*.wav               filter=lfs diff=lfs merge=lfs -text
+*.mp3               filter=lfs diff=lfs merge=lfs -text
+*.ogg               filter=lfs diff=lfs merge=lfs -text
+*.flac              filter=lfs diff=lfs merge=lfs -text
+*.aif               filter=lfs diff=lfs merge=lfs -text
+*.aiff              filter=lfs diff=lfs merge=lfs -text
+*.xma               filter=lfs diff=lfs merge=lfs -text
+*.bank              filter=lfs diff=lfs merge=lfs -text
+*.bnk               filter=lfs diff=lfs merge=lfs -text
+
+# --- Video ---
+*.mp4               filter=lfs diff=lfs merge=lfs -text
+*.mov               filter=lfs diff=lfs merge=lfs -text
+*.avi               filter=lfs diff=lfs merge=lfs -text
+*.mkv               filter=lfs diff=lfs merge=lfs -text
+*.webm              filter=lfs diff=lfs merge=lfs -text
+*.wmv               filter=lfs diff=lfs merge=lfs -text
+
+# --- 3D models / DCC source ---
+*.fbx               filter=lfs diff=lfs merge=lfs -text
+*.obj               filter=lfs diff=lfs merge=lfs -text
+*.abc               filter=lfs diff=lfs merge=lfs -text
+*.usd               filter=lfs diff=lfs merge=lfs -text
+*.usda              filter=lfs diff=lfs merge=lfs -text
+*.usdc              filter=lfs diff=lfs merge=lfs -text
+*.usdz              filter=lfs diff=lfs merge=lfs -text
+*.gltf              filter=lfs diff=lfs merge=lfs -text
+*.glb               filter=lfs diff=lfs merge=lfs -text
+*.blend             filter=lfs diff=lfs merge=lfs -text
+*.blend1            filter=lfs diff=lfs merge=lfs -text
+*.ma                filter=lfs diff=lfs merge=lfs -text
+*.mb                filter=lfs diff=lfs merge=lfs -text
+*.max               filter=lfs diff=lfs merge=lfs -text
+*.ztl               filter=lfs diff=lfs merge=lfs -text
+*.zpr               filter=lfs diff=lfs merge=lfs -text
+*.spp               filter=lfs diff=lfs merge=lfs -text
+*.sbs               filter=lfs diff=lfs merge=lfs -text
+*.sbsar             filter=lfs diff=lfs merge=lfs -text
+
+# --- Fonts ---
+*.ttf               filter=lfs diff=lfs merge=lfs -text
+*.otf               filter=lfs diff=lfs merge=lfs -text
+*.ttc               filter=lfs diff=lfs merge=lfs -text
+
+# --- Archives / binaries ---
+*.zip               filter=lfs diff=lfs merge=lfs -text
+*.7z                filter=lfs diff=lfs merge=lfs -text
+*.rar               filter=lfs diff=lfs merge=lfs -text
+*.gz                filter=lfs diff=lfs merge=lfs -text
+*.tar               filter=lfs diff=lfs merge=lfs -text
+*.dll               filter=lfs diff=lfs merge=lfs -text
+*.lib               filter=lfs diff=lfs merge=lfs -text
+*.so                filter=lfs diff=lfs merge=lfs -text
+*.dylib             filter=lfs diff=lfs merge=lfs -text
+*.pdb               filter=lfs diff=lfs merge=lfs -text
+*.exe               filter=lfs diff=lfs merge=lfs -text
+*.pdf               filter=lfs diff=lfs merge=lfs -text
